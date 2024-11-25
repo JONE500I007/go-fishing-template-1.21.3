@@ -20,6 +20,9 @@
 		],
 		"fabric-datagen": [
 			"net.go.fishing.GoFishingDataGenerator"
+		],
+		"client": [
+			"net.go.fishing.GoFishingModClient"
 		]
 	},
 	"mixins": [
