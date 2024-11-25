@@ -11,6 +11,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
+    //This For TEsting
     public static final  Item RAW_BLUE_FISH = registerItem("raw_blue_fish", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(GoFishing.MOD_ID, "raw_blue_fish")))));
     public static final  Item COOKED_BLUE_FISH = registerItem("cooked_blue_fish", new Item(new Item.Settings()
