@@ -11,8 +11,8 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    //This For TEsting
     public static final  Item RAW_BLUE_FISH = registerItem("raw_blue_fish", new Item(new Item.Settings()
+            .maxCount(999)
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(GoFishing.MOD_ID, "raw_blue_fish")))));
     public static final  Item COOKED_BLUE_FISH = registerItem("cooked_blue_fish", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(GoFishing.MOD_ID, "cooked_blue_fish")))));
@@ -26,7 +26,6 @@ public class ModItems {
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(GoFishing.MOD_ID, "red_card_fish")))));
     public static final  Item BURNED_RED_CARD_FISH = registerItem("burned_red_card_fish", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(GoFishing.MOD_ID, "burned_red_card_fish")))));
-
 
     public static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(GoFishing.MOD_ID, name), item);
